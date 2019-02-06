@@ -95,9 +95,10 @@ function setCryptoCurrency(toThis) {
 	{
         case 'Euno':
             window.networkVersion = 0x21;
-            window.privateKeyPrefix = 0xb0;
+            window.privateKeyPrefix = 0xA1;
             window.WIFPrefix = '6';
             window.compressedWIFPrefix = 'T';
+            window.frontJPG = './images/front-300dpi-euno.jpg';
             document.title = 'EUNO paper wallet generator';
             break;
         default:
@@ -10180,29 +10181,23 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                    <div style="float: left; width: 375px; text-align: right;">
                   Denomination: 
                   <select id="backDenominationSelect" onChange="setDenomination(this.value);">
-                    <option value="">*** None ***</option>
-                    <option value="10 BTC">10 BTC</option>
-                    <option value="5 BTC">5 BTC</option>
-                    <option value="2 BTC">2 BTC</option>
-                    <option value="1 BTC">1 BTC</option>
-                    <option value="50000 Bits">50000 Bits</option>
-                    <option value="10000 Bits">10000 Bits</option>
-                    <option value="5000 Bits">5000 Bits</option>
-                    <option value="1000 Bits">1000 Bits</option>
-                    <option value="500 Bits">500 Bits</option>
-                    <option value="100 Bits">100 Bits</option>
-                    <option value="50000 mBTC">50000 mBTC</option>
-                    <option value="10000 mBTC">10000 mBTC</option>
-                    <option value="5000 mBTC">5000 mBTC</option>
-                    <option value="1000 mBTC">1000 mBTC</option>
-                    <option value="500 mBTC">500 mBTC</option>
-                    <option value="100 mBTC">100 mBTC</option>
-                    <option value="50 mBTC">50 mBTC</option>
-                    <option value="20 mBTC">20 mBTC</option>
-                    <option value="10 mBTC">10 mBTC</option>
-                    <option value="5 mBTC">5 mBTC</option>
-                    <option value="1 mBTC">1 mBTC</option>
-                    <option value="other">Other...</option>
+                      <option value="">*** None ***</option>
+                      <option value="50000 EUNO">50000 EUNO</option>
+                      <option value="25000 EUNO">25000 EUNO</option>
+                      <option value="15000 EUNO">15000 EUNO</option>
+                      <option value="10000 EUNO">10000 EUNO</option>
+                      <option value="5000 EUNO">5000 EUNO</option>
+                      <option value="2000 EUNO">2000 EUNO</option>
+                      <option value="1000 EUNO">1000 EUNO</option>
+                      <option value="500 EUNO">500 EUNO</option>
+                      <option value="200 EUNO">200 EUNO</option>
+                      <option value="100 EUNO">100 EUNO</option>
+                      <option value="50 EUNO">50 EUNO</option>
+                      <option value="20 EUNO">20 EUNO</option>
+                      <option value="10 EUNO">10 EUNO</option>
+                      <option value="5 EUNO">5 EUNO</option>
+                      <option value="1 EUNO">1 EUNO</option>
+                      <option value="other">Other amont</option>
                   </select>
                   <div id="backDenominationOther" style="display: none;">
                   <input id="backDenominationOtherAmount" maxlength="5" size="6" value="1" onChange="setDenomination('other');">
@@ -10264,7 +10259,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                   </div><!-- end backLongText -->
                 </div><!-- end backText -->
 
-				<img id="backsvg1" class="backsvg" src="./images/back-300dpi.jpg">
+				<img id="backsvg1" class="backsvg" src="./images/back-300dpi-euno.jpg" />
 			</div><!-- end backarea -->
 
 

@@ -117,9 +117,17 @@ a:hover {color: #536df2; text-decoration: underline;}
 
 #backarea .backsvg { width: 1010px; height: 331px; border: 0; margin: 0; padding: 0; left: 0; }
 
-#printeradjust { color: #060; font-size: 12px; }
-#printeradjust span { background-color: #e2f9bd; padding: 2px 3px; border: 1px solid #009900; font-family: "Courier New", Courier, monospace; font-weight: bold; font-size: 12px;}
-#printeradjust a:hover span { background-color: #CCFFCC; }
+#printeradjust { color: #FFF !important; font-size: 12px; }
+#printeradjust span {
+    background-color: #816fdd;
+    padding: 2px 3px;
+    border: 1px solid #562BDD;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFF;
+}
+#printeradjust a:hover span { background-color: #816fdd; }
 #printeradjust a, #printeradjust a:hover {text-decoration: none;}
 #printeradjust input { text-align: center; margin: 0 2px; width: 20px;}
 
@@ -141,14 +149,14 @@ a:hover {color: #536df2; text-decoration: underline;}
     -webkit-stroke-width: 2px;
     -webkit-stroke-color: #FFFFFF;
     -webkit-fill-color: #FFFFFF;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 0px 5px #000;
 }
 
 
 #paperarea .artwallet .btcaddress
 {
     position: absolute; top: 275px; left: 40px; z-index: 100; background-color: transparent;
-    color: #000000; margin: 0;
+    color: #FFF; margin: 0;
     -webkit-transform-origin:top left;
     /* -webkit-transform:rotate(-90deg); */
     -moz-transform-origin:top left;
@@ -164,7 +172,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 #paperarea .artwallet .dupbtcaddress
 {
     position: absolute; top: 43px; left: 40px; z-index: 100; background-color: transparent;
-    color: #000000; margin: 0;
+    color: #FFF; margin: 0;
     /* -webkit-transform-origin:top left; */
     -webkit-transform:rotate(-180deg);
     /* -moz-transform-origin:top left; */
@@ -180,7 +188,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 #paperarea .artwallet .btcprivwif, #paperarea .artwallet .btcencryptedkey
 {
     position: absolute; top: 245px; left: 610px; z-index: 100; background-color: transparent;
-    color: #000000; margin: 0;
+    color: #FFF; margin: 0;
     -webkit-transform-origin:top left;
     /*-webkit-transform:rotate(-90deg);*/
     -moz-transform-origin:top left;
@@ -196,7 +204,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 #paperarea .artwallet .dupbtcprivwif, #paperarea .artwallet .dupbtcencryptedkey
 {
     position: absolute; top: 72px; left: 610px; z-index: 100; background-color: transparent;
-    color: #000000; margin: 0;
+    color: #FFF; margin: 0;
     /* -webkit-transform-origin:top left; */
     -webkit-transform:rotate(-180deg);
     /* -moz-transform-origin:top left; */
@@ -238,8 +246,8 @@ a:hover {color: #536df2; text-decoration: underline;}
 #backText #backLines { position: absolute; margin-left: 416px; margin-top: 1px; }
 #backText #backLines p { border-bottom: 1px dotted #999; line-height: 11px; width: 174px;}
 #backText #backNotes { position: absolute; margin-left: 421px; margin-top: 105px; color: #666666; }
-#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 16px; font-size: 8px;}
-#backText #backLongText ul { margin: 0 0 0 14px; padding: 0; list-style: square outside none; }
+#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 46px; font-size: 8px;}
+#backText #backLongText ul { margin: 0 0 0 22px; padding: 0; list-style: square outside none; color: #000 }
 #backText #backLongText li { margin: 0; padding: 0 0 3px 0; }
 #backText #backLongText li strong { font-weight: 400; color: red; }
 
@@ -251,7 +259,13 @@ a:hover {color: #536df2; text-decoration: underline;}
 #backText #backSealSmall { position: absolute; margin: 53px 0 0 0; padding: 0 0 0 0; z-index: 1200; width: 105px;
     font-family: ubuntu_mono_bold, Arial, Helvetica, sans-serif; text-align: center; font-size: 10px; letter-spacing: .1em; color: #22461b;
     text-shadow: rgb(255, 255, 255) 1px 1px 1px }
-#backText #backCustomMessageEntry { background-color: #EEE; width: 195px; height: 150px; font-size: 10px; }
+#backText #backCustomMessageEntry {
+    background-color: #EEE;
+    width: 195px;
+    height: 120px;
+    font-size: 10px;
+    margin-top: 15px;
+}
 #backText #backCustomMessage { display: none; position: absolute; overflow: hidden; margin-left: 210px; width: 195px; margin-top: 20px; font-size: 11px; line-height: 15px; height: 150px; }
 
 .nicerButton { /* thanks http://www.cssbuttongenerator.com */
@@ -304,7 +318,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 .instructionsarea { font-size: 12px; line-height: 18px; }
 .instructionsarea li { padding-bottom: 8px; list-style: none; }
 
-.highlighted { font-size: 14px; padding: 8px; background-color: #ebfdbf;}
+.highlighted { font-size: 14px; padding: 8px; background-color: transparent; color: #FFF;}
 
 #browserinfo { text-align: center; }
 .englishjson { text-align: center; padding: 40px 0 20px 0; }
@@ -312,7 +326,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 .unittests div { width: 894px; font-family: monospace; text-align: left; margin: auto; padding: 5px; border: 1px solid black; }
 
 .background { background: #ccc no-repeat center; opacity: 0.4; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-#busyblock, #busyblock_decrypt, #paperbip38settings, #paperqrscanner { position: absolute; display: none; width: 100%; height: 100%; top: 0; left: 0; z-index: 5000; vertical-aligh: middle; }
+#busyblock, #busyblock_decrypt, #paperbip38settings, #paperqrscanner { position: absolute; display: none; width: 100%; height: 100%; top: 0; left: 0; z-index: 5000; vertical-aligh: middle; color: #000; }
 #busyblock.busy, #busyblock_decrypt.busy, #paperbip38settings.show, #paperqrscanner.show { display: block; }
 .dialog {
     z-index: 6000;
@@ -413,10 +427,20 @@ blink {
 
     #tagwarning { position: absolute; left: 250px; top: 25px; font-size: 12px; color: red; }
     .menu { text-align: left; }
-    .menu .tab { border-top-left-radius: 5px; border-top-right-radius: 5px; display: inline-block; background-color: #ffffff;
+    .menu .tab {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: inline-block;
+        background-color: #ffffff;
         color: #7599f2; font-size: 12px;
         border: 0px;
-        padding: 9px 13px; margin: 0 2px 0 0; position: relative; top: 2px; z-index: 110; cursor: pointer; }
+        padding: 9px 13px;
+        margin: 0 2px 2px 0;
+        position: relative;
+        top: 2px;
+        z-index: 110;
+        cursor: pointer;
+    }
     .menu .tab:hover { color: #5973f2; }
     .menu .tab.selected {
         background-color: #7599f2;
