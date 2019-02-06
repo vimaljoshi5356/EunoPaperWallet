@@ -94,8 +94,8 @@ function setCryptoCurrency(toThis) {
 	switch (toThis)
 	{
         case 'Euno':
-            window.networkVersion = 0x21;
-            window.privateKeyPrefix = 0x1A;
+            window.networkVersion = 0x21; //33 (E)
+            window.privateKeyPrefix = 0xA1; //33+128=161
             window.WIFPrefix = '9';
             window.compressedWIFPrefix = '[PQ]';
             window.frontJPG = './images/front-300dpi-euno.jpg';
