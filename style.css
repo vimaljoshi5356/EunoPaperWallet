@@ -253,7 +253,6 @@ a:hover {color: #536df2; text-decoration: underline;}
 
 #backText #backSeal { position: absolute; margin-top: 53px; margin-left: 10px; z-index: 1100; display: none;}
 #backText #backSealBig { position: absolute; margin: 18px 0 0 0; padding: 0 0 0 0; z-index: 1200; width: 105px;
-    text-shadow: rgb(201, 251, 135) 2px 2px 0px, rgb(156, 156, 156) 4px 4px 0px;
     text-align: center; font-size: 28px; color: #000000;
     font-weight: bold; font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; }
 #backText #backSealSmall { position: absolute; margin: 53px 0 0 0; padding: 0 0 0 0; z-index: 1200; width: 105px;
