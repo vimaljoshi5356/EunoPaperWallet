@@ -246,7 +246,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 #backText #backLines { position: absolute; margin-left: 416px; margin-top: 1px; }
 #backText #backLines p { border-bottom: 1px dotted #999; line-height: 11px; width: 174px;}
 #backText #backNotes { position: absolute; margin-left: 421px; margin-top: 105px; color: #666666; }
-#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 46px; font-size: 8px;}
+#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 38px; font-size: 8px;}
 #backText #backLongText ul { margin: 0 0 0 22px; padding: 0; list-style: square outside none; color: #000 }
 #backText #backLongText li { margin: 0; padding: 0 0 3px 0; }
 #backText #backLongText li strong { font-weight: 400; color: red; }
@@ -255,15 +255,20 @@ a:hover {color: #536df2; text-decoration: underline;}
 #backText #backSealBig { position: absolute; margin: 18px 0 0 0; padding: 0 0 0 0; z-index: 1200; width: 105px;
     text-align: center; font-size: 28px; color: #000000;
     font-weight: bold; font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; }
-#backText #backSealSmall { position: absolute; margin: 53px 0 0 0; padding: 0 0 0 0; z-index: 1200; width: 105px;
+#backText #backSealSmall {
+    position: absolute;
+    margin: 53px 0 0 0;
+    padding: 0 0 0 0;
+    z-index: 1200;
+    width: 105px;
     font-family: ubuntu_mono_bold, Arial, Helvetica, sans-serif; text-align: center; font-size: 10px; letter-spacing: .1em; color: #22461b;
-    text-shadow: rgb(255, 255, 255) 1px 1px 1px }
+}
 #backText #backCustomMessageEntry {
     background-color: #EEE;
     width: 195px;
     height: 120px;
     font-size: 10px;
-    margin-top: 15px;
+    margin-top: 22px;
 }
 #backText #backCustomMessage { display: none; position: absolute; overflow: hidden; margin-left: 210px; width: 195px; margin-top: 20px; font-size: 11px; line-height: 15px; height: 150px; }
 
@@ -391,10 +396,30 @@ blink {
 #detailarea .item.clear { clear: both; padding-top: 10px; }
 #detailarea .label { display: block; font-weight: bold; }
 #detailarea .output { display: block; font-family: monospace; font-size: 1.25em; }
-#detailarea #detailqrcodepublic { position: relative; float: left; margin: 0 10px 0 0; padding: 13px 11px 11px 11px; }
-#detailarea #detailqrcodepubliccomp { position: relative; float: right; margin: 0 0 0 10px; padding: 13px 11px 11px 11px; }
-#detailarea #detailqrcodeprivate { position: relative; float: left; margin: 0 10px 0 0; padding: 13px 11px 11px 11px; }
-#detailarea #detailqrcodeprivatecomp { position: relative; float: right; margin: 0 0 0 10px; padding: 13px 11px 11px 11px; }
+#detailarea #detailqrcodepublic {
+    position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 13px 11px 11px 11px;
+}
+#detailarea #detailqrcodepubliccomp {
+    position: relative;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 13px 11px 11px 11px;
+}
+#detailarea #detailqrcodeprivate {
+    position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 13px 11px 11px 11px;
+}
+#detailarea #detailqrcodeprivatecomp {
+    position: relative;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 13px 11px 11px 11px;
+}
 #detailpubkey { width: 590px; }
 #detailbip38commands { display: none; padding-top: 5px; }
 .answer { padding: 0 15px 10px 25px; text-align: left; display: none; font-size: 80%; }
