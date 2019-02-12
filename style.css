@@ -150,6 +150,7 @@ a:hover {color: #536df2; text-decoration: underline;}
     -webkit-stroke-color: #FFFFFF;
     -webkit-fill-color: #FFFFFF;
     text-shadow: 1px 0px 5px #000;
+    color: #FFF;
 }
 
 
@@ -529,6 +530,6 @@ blink {
     #detailarea .privqr .item { width: 285px; }
     #detailarea .notes { display: none; }
     .faq { display: none; }
-    #backCustomMessageContent { display: block !important; }
+    #backCustomMessageContent { display: block !important; color: #000000 !important; margin-top: 20px !important; }
     #backCustomMessageEntry { display: none; }
 }
