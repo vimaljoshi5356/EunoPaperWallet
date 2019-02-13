@@ -247,7 +247,7 @@ a:hover {color: #536df2; text-decoration: underline;}
 #backText #backLines { position: absolute; margin-left: 416px; margin-top: 1px; }
 #backText #backLines p { border-bottom: 1px dotted #999; line-height: 11px; width: 174px;}
 #backText #backNotes { position: absolute; margin-left: 421px; margin-top: 105px; color: #666666; }
-#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 38px; font-size: 8px;}
+#backText #backLongText { position: absolute; margin-left: 200px; width: 210px; margin-top: 38px; font-size: 8px !important;}
 #backText #backLongText ul { margin: 0 0 0 22px; padding: 0; list-style: square outside none; color: #000 }
 #backText #backLongText li { margin: 0; padding: 0 0 3px 0; }
 #backText #backLongText li strong { font-weight: 400; color: red; }
