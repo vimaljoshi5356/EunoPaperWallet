@@ -435,7 +435,7 @@ blink {
     font-weight: bold;
     padding: 4px;
     font-size: 12px;
-    margin-top 4px;
+    margin-top: 4px;
 }
 
 #suppliedPrivateKey {
