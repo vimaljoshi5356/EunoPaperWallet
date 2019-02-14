@@ -10031,6 +10031,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
 <br>
 <br /><br />
 
+						<!-- Todo: Insert local documentation file links here -->
 
 
 </div>
@@ -10074,7 +10075,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                     <div id="keyButtons" style="display: block; float: left;">
                     <input type="button" id="papergenerate1" value="RANDOM GENERATE NEW WALLET" onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value); printCounter=0;" />
 
-                    <input type="button" id="papergenerate2" value="Enter my own key, dice rolls, brain wallet, etc..." onClick="ninja.wallets.paperwallet.toggleVanityField(true);" />
+                    <input type="button" id="papergenerate2" value="Enter my own key, dice rolls, etc..." onClick="ninja.wallets.paperwallet.toggleVanityField(true);" />
                     </div>
 
                 <div id="selfinfo" style="display: none; position: absolute; top: 15px;">
@@ -10098,9 +10099,6 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
 
                    <b class="helpTitle">If you want to make a paper wallet which can <em>also</em> be accessed using a passphrase (AKA a "brain wallet"):</b>
                    <br />
-                   <br />
-                   You can make a so-called "brain wallet" by supplying a VERY secure passphrase like '1852 Adobe Cloud SMASH fuzzy steamzonk'. <em>Be extremely careful doing this because a wallet generated using an insecure passphrase is virtually guaranteed to have its balance stolen!</em>.
-                   <br />
                    <br />The resulting paper wallet will still have an ordinary crypto-looking private key and public address, but you will <em>also</em> be able to retrieve your wallet contents by entering your passphrase into the 'verify' tab of this service or a similar service.<br /><br />
                     <strong>Note:</strong> supplying a brain wallet passphrase is different from BIP38-encrypting your wallet with a passphrase.
 				   <br />
@@ -10109,7 +10107,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                 </div>
                     
                     <div id="supplyKeys" style="display: none; float: left;">
-                    <p style="padding: 0; margin: 0;"><input placeholder="Enter WIF private key (or brain wallet, dice rolls, shuffled cards, etc.)" autocomplete="off" id="suppliedPrivateKey" name="suppliedPrivateKey" spellcheck="false" style="font-family: ubuntu_mono_bold, 'Courier New', Courier, monospace;" />&nbsp;<input type="button" id="papergenerate3" value="Apply &raquo;" onClick="testAndApplyVanityKey();" />
+                    <p style="padding: 0; margin: 0;"><input placeholder="Enter WIF private key (or dice rolls, shuffled cards, etc.)" autocomplete="off" id="suppliedPrivateKey" name="suppliedPrivateKey" spellcheck="false" style="font-family: ubuntu_mono_bold, 'Courier New', Courier, monospace;" />&nbsp;<input type="button" id="papergenerate3" value="Apply &raquo;" onClick="testAndApplyVanityKey();" />
                     </p>
                     <p style="margin: 10px 0 0 0; padding:0;">
                     <div style="float: right;">
@@ -10330,7 +10328,6 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                     	<p><em>This feature works for private keys made here as well as those generated using any other Euno• software</em></p>
 						<p><strong>Enter or <a onClick="ninja.wallets.detailwallet.qrscanner.start()">scan</a> any private key to verify that the key is valid</strong> and show its corresponding public key. If your private key validates, then you may be reassured that you will able to retrieve any funds sent to that wallet.</p>
  						<p><strong>Is your wallet BIP38 encrypted?</strong> If so, you can use this form to decrypt your private key and recover the standard Wallet Import Format (WIF) key suitable for wallet software and services that don't directly support BIP38 importing.</p>
-                        <p><strong>You may also type in a "brain wallet" passphrase</strong> to see the corresponding SHA256 hashed keys.</p>
 					</div>
 					<div style="width: 45%; float: left; padding: 0 15px;">
 						<span class="qrinput">
@@ -10354,7 +10351,7 @@ Find your scissors! The final step is to cut out your wallet, fold it, and seal 
                         <br />
 						<span><input type="button" id="detailview" value="Validate / Decrypt" onClick="ninja.wallets.detailwallet.viewDetails();" /></span>
 						<div class="row extra">
-							<span><label id="detailkeyformats">Supported formats: WIF, WIFC, HEX, B64, B6, MINI, BIP38, "Brain Wallet"</label></span>
+							<span><label id="detailkeyformats">Supported formats: WIF, WIFC, HEX, B64, B6, MINI, BIP38</label></span>
 						</div>
 						<div id="detailbip38commands">
 							This "6P..." private key is BIP38-encrypted.<br />
