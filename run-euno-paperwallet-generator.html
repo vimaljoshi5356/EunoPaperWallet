@@ -9993,7 +9993,7 @@ Bitcoin.Util = {
 						  switch(window.location.protocol) {
 							 case 'http:':
 							 case 'https:':
-							   document.write('<span style="color: #990000;">&times; You appear to be running this generator off of a live website, which is not recommended for creating valuable wallets. Instead, use the download link at the bottom of this page to download the ZIP file from GitHub and run this generator offline as a \'local\' HTML file.</span>');
+							   document.write('<div style="background-color: #990000; padding: 10px;"><span style="color: #FFF; font-size: 16px;">&times; You appear to be running this generator on a live website, which is not recommended for creating valuable wallets. Instead, use the download link at the bottom of this page to download the ZIP file from GitHub and run this generator offline.</span></div>');
 							   break;
 							 case 'file:':
 							   document.write('<span style="color: #009900;">&#10004; You are running this generator from your own download.</span><br />Tip: Make 100% sure you are offline by trying google.com in your browser!</span>');
